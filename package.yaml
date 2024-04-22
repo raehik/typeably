@@ -1,0 +1,32 @@
+name: typeably
+version: 0.0.0
+synopsis: DerivingVia Typeable counterpart to Generically
+description: Please see README.md.
+extra-source-files:
+- README.md
+- CHANGELOG.md
+category: Types, Data
+license: MIT
+license-file: LICENSE
+tested-with:
+#- GHC==9.8
+- GHC==9.6
+#- GHC==9.4
+#- GHC==9.2
+
+github: raehik/typeably
+maintainer: Ben Orchard <thefirstmuffinman@gmail.com>
+author: Ben Orchard
+
+ghc-options:
+- -Wall
+
+# omitting ticks is good; see https://gitlab.haskell.org/ghc/ghc/-/issues/20531
+# (off by default since GHC 9.4) (flag since GHC 7.10)
+- -Wno-unticked-promoted-constructors
+
+dependencies:
+- base >= 4.12 && < 5 # base-4.12.0.0 = GHC 8.6.1 which introduced DerivingVia
+
+library:
+  source-dirs: src
