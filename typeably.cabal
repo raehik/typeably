@@ -5,7 +5,7 @@ cabal-version: 1.12
 -- see: https://github.com/sol/hpack
 
 name:           typeably
-version:        0.0.0
+version:        0.1.0
 synopsis:       DerivingVia Typeable counterpart to Generically
 description:    Please see README.md.
 category:       Types, Data
@@ -17,7 +17,10 @@ license:        MIT
 license-file:   LICENSE
 build-type:     Simple
 tested-with:
-    GHC==9.6
+    GHC==9.8
+  , GHC==9.6
+  , GHC==9.4
+  , GHC==9.2
 extra-source-files:
     README.md
     CHANGELOG.md

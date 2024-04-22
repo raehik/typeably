@@ -1,5 +1,5 @@
 name: typeably
-version: 0.0.0
+version: 0.1.0
 synopsis: DerivingVia Typeable counterpart to Generically
 description: Please see README.md.
 extra-source-files:
@@ -9,10 +9,10 @@ category: Types, Data
 license: MIT
 license-file: LICENSE
 tested-with:
-#- GHC==9.8
+- GHC==9.8
 - GHC==9.6
-#- GHC==9.4
-#- GHC==9.2
+- GHC==9.4
+- GHC==9.2
 
 github: raehik/typeably
 maintainer: Ben Orchard <thefirstmuffinman@gmail.com>
